@@ -1,0 +1,80 @@
+<html>
+<head>
+	
+	<title>
+		Cadastro
+	</title>
+	
+	<meta charset = "UTF-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="CSS_Login.css"/>
+	<link rel = "stylesheet" type = "text/css" href = "pagina.css">
+	<link rel = "stylesheet" type = "text/css" href = "Form.css">
+	<link rel = "stylesheet" type = "text/css" href = "cons.css">
+	<link rel = "stylesheet" type = "text/css" href = "rodape.css">
+
+
+	<script language="Javascript">
+		
+		function blokletras(objEvent)
+        {
+            var iKeyCode;
+            iKeyCode = objEvent.keyCode; 
+            if(iKeyCode>=48 && iKeyCode<=57) return true;
+            return false;
+        }
+	
+		function valida(){
+			vazio=false;
+			if(document.f1.cod.value==""){
+				alert("O Código do Produto tem que ser preenchido");
+				vazio=true
+			}
+			if(document.f1.descricao.value==""){
+				alert("A Descricão tem que ser preenchida");
+				vazio=true
+			}
+			if(document.f1.unidade.value==""){
+				alert("A Unidade tem que ser preenchida");
+				vazio=true
+			}
+			if(document.f1.estoque.value==""){
+				alert("O Estoque tem que ser preenchido");
+				vazio=true
+			}
+			if(document.f1.caracteristicas.value==""){
+				alert("A Característica tem que ser preenchida");
+				vazio=true
+			}
+			if(document.f1.codfornecedor.value==""){
+				alert("O Código do Fornecedor tem que ser preenchido");
+				vazio=true
+			}
+			if(vazio==false) document.f1.submit();
+		}
+	</script>
+	
+</head>
+<body background="biblioteca2.jpeg">
+
+	<div id="cadastro">
+
+		<form name="f1" action="cadastro_produtos.php" method = "POST">
+			<h1>Cadastrar Produtos </h1> 
+
+		Código do Produto :<input type="text" name="cod" id="nome_cad"  placeholder="ex : 1" required="required" onkeypress="return blokletras(event)"><br>
+		Descrição :<input type="text" name="descricao" id="nome_cad" required="required"><br>
+		Unidade :<input type="text" name="unidade" id="nome_cad"  required="required" ><br>
+		Quantidade no Estoque :<input type="text" name="estoque" id="nome_cad" required="required" onkeypress="return blokletras(event)" ><br>
+		Características :<input type="text" name="caracteristicas" id="nome_cad" required="required"><br>
+		Código do Fornecedor :<input type="text" name="codfornecedor" id="nome_cad"  required="required" onkeypress="return blokletras(event)" ><br>
+		<br><br><input type="submit" name="pesquisar" value="Cadastrar" onclick="valida()">
+		</form>
+	</div>
+	
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br>
+	<a href="Index_Menu.html"><input type="submit" name="pesquisar" value="Voltar ao Menu Inicial"></a></button>
+
+</body>
+</html>	

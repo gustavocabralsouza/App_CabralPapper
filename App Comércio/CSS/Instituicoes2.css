@@ -1,0 +1,135 @@
+/*******************************************************
+	CSS - Instituições 2 - V1
+*******************************************************/
+
+
+/*******************************************************
+	Grupo 1
+*******************************************************/
+
+#G1 {
+		position: relative;
+		box-sizing: border-box;
+		width: 100%;
+		height: 100vh;
+		float: left;
+		margin: 0;
+		padding: 0;
+}
+#Rodape {
+		box-sizing: border-box;
+		width: 100%;
+		height: auto; 
+		float: left;	
+		margin: 0;
+		padding: 30px 10%;
+		background-color: #32CD32;
+}
+
+#RodL {
+		width: 50%;
+		float: left;
+		text-align: left;
+}
+
+#RodR {
+		width: 50%;
+		float: left;
+		color: #A9A9A9;
+		text-align: right;
+}
+
+.TextoRod {
+		width: 100%;
+		float: left;
+		color: #ffffff;
+		font-size: 10pt;
+		margin: 0;
+		padding: 3px 0;
+}
+
+.SobreRod:hover {
+		color: #C0C0C0;
+}
+
+.hr_Rod {
+		width: 100%;
+		border-color: white;
+}
+
+	.InsImg {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+	}
+
+/*******************************************************
+	Grupo 2
+*******************************************************/
+
+#G2 {
+		background-image: url("../img/FundoW3.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		box-sizing: border-box;
+		width: 100%;
+		height: 100vh;
+		float: left;
+		margin: 0;
+		padding: 0 10%;
+}
+
+	#G2-Cont {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin: 110px 10%;
+			padding: 0;
+			background-color: rgba(0, 0, 0, 70%);
+			border-radius: 20px;
+	}
+	
+	/*******************************************************
+		Botões
+	*******************************************************/
+
+	.btn-group {
+			box-sizing: border-box;
+			width: 100%;
+			height: auto;
+			float: left;
+			text-align: center;
+			margin: 0;
+			padding: 0;
+	}
+	
+	.btn {
+			box-sizing: border-box;
+			width: auto;
+			height: auto;
+			color: #FFFFFF;
+			font-size: 20px;
+			margin: 5px; 
+			padding: 10px 25px;
+			background-color: #3D8B9F;
+			border: none;
+			border-radius: 10px;	
+			transition: 0.3s;
+			cursor: pointer;
+	}
+	
+	.btn:hover {
+			background-color: #2F6B7A;
+	}
+	
+	.btn:focus {
+			outline-style: none;
+	}

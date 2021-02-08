@@ -1,0 +1,107 @@
+/*******************************************************
+	CSS - Tipo Profissão Index - V1
+*******************************************************/
+
+
+/*******************************************************
+	Grupo 1
+*******************************************************/
+
+#G1 {
+		box-sizing: border-box;
+		width: 100%;
+		height: auto;
+		float: left;
+		margin: 100px 0 0 0;
+		padding: 0 10%;
+}
+#Rodape {
+		box-sizing: border-box;
+		width: 100%;
+		height: auto; 
+		float: left;	
+		margin: 0;
+		padding: 30px 10%;
+		background-color: #32CD32;
+}
+
+#RodL {
+		width: 50%;
+		float: left;
+		text-align: left;
+}
+
+#RodR {
+		width: 50%;
+		float: left;
+		color: #A9A9A9;
+		text-align: right;
+}
+
+.TextoRod {
+		width: 100%;
+		float: left;
+		color: #ffffff;
+		font-size: 10pt;
+		margin: 0;
+		padding: 3px 0;
+}
+
+.SobreRod:hover {
+		color: #C0C0C0;
+}
+
+.hr_Rod {
+		width: 100%;
+		border-color: white;
+}
+
+	#Box-Group {
+			box-sizing: border-box;
+			width: 100%;
+			height: auto;
+			float: left;
+			margin: 0;
+			padding: 0;
+	}
+	
+		.Space {
+				box-sizing: border-box;
+				width: 25%;
+				height: auto;
+				float: left;
+				margin: 20px 0;
+				padding: 20px;
+		}
+		
+			.Box {
+					position: relative;
+					box-sizing: border-box;
+					width: 100%;
+					height: auto;
+					float: left;
+					margin: 0;
+					padding: 0;
+					background-color: #3D8B9F;
+					border-radius: 20px;
+			}
+			
+			.Box img {
+					border-radius: 20px 20px 0 0;
+			}
+			
+			.Exatas {
+					background-color: #256208;
+			}
+			
+			.Humanas {
+					background-color: #0042DD;
+			}
+			
+			.Artisticas {
+					background-color: #D16478;
+			}
+			
+			.Biologicas {
+					background-color: #00B2B2;
+			}

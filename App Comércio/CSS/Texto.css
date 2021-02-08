@@ -1,0 +1,204 @@
+/*******************************************************
+	CSS - Textos - V1
+*******************************************************/
+
+
+/* Cor 
+
+	Titulo
+		color: #202124;
+		color: #424242;
+	Texto 
+		color: #5F6368;
+		color: #3A4A55;
+*/
+
+/*******************************************************
+	Titulos
+*******************************************************/
+
+.Titulo1 {
+		box-sizing: border-box;	
+		width: 100%;
+		height: auto;
+		font-size: 60px;
+		color: #FFFFFF;
+		margin: 0;
+		padding: 5px 0;
+}
+
+.Titulo2 {
+		box-sizing: border-box;	
+		width: 100%;
+		height: auto;
+		font-size: 54px;
+		text-align: center;
+		color: #FFFFFF;
+		margin: 0;
+		padding: 5px 0;	
+}
+
+.Titulo3 {
+		box-sizing: border-box;	
+		width: 100%;
+		height: auto;
+		font-size: 60px;
+		text-align: center;
+		color: #202124;
+		margin: 20px 0;
+		padding: 0;	
+}
+
+.Titulo4 {
+		box-sizing: border-box;	
+		width: 100%;
+		height: auto;
+		font-size: 28px;
+		text-align: left;
+		color: #202124;
+		margin: 0;
+		padding: 5px 0;	
+}
+
+.Titulo5 {
+		box-sizing: border-box;	
+		width: 100%;
+		height: auto;
+		font-size: 20px;
+		text-align: center;
+		color: #FFFFFF;
+		margin: 0;
+		padding: 10px 0;
+		border-radius: 20px;		
+}
+
+.Titulo6 {
+		box-sizing: border-box;	
+		height: auto;
+		font-size: 40px;
+		text-align: center;
+		color: #FFFFFF;
+		margin: 0;
+		padding: 5px 20px;	
+		background-color: rgba(0, 0, 0, 70%);
+		border-radius: 10px;
+}
+
+.Titulo7 {
+		box-sizing: border-box;	
+		height: auto;
+		font-size: 56px;
+		text-align: center;
+		color: #202124;
+		margin: 0;
+		padding: 15px 0;	
+}
+
+.Titulo8 {
+		box-sizing: border-box;	
+		height: auto;
+		font-size: 40px;
+		text-align: left;
+		color: #202124;
+		margin: 0;
+		padding: 10px 0;	
+}
+
+.Titulo9 {
+		box-sizing: border-box;	
+		width: 100%;
+		height: auto;
+		font-size: 45px;
+		text-align: center;
+		color: #FFFFFF;
+		margin: 0;
+		padding: 10px 0;
+}
+
+/*******************************************************
+	Textos
+*******************************************************/
+
+.Texto1 {
+		box-sizing: border-box;	
+		width: 100%;
+		height: auto;
+		font-size: 22px;
+		text-align: justify;
+		color: #FFFFFF;
+		margin: 0;
+		padding: 5px 0;
+}
+
+.Texto2 {
+		box-sizing: border-box;	
+		width: 100%;
+		height: auto;
+		font-size: 30px;
+		text-align: center;
+		color: #FFFFFF;
+		margin: 0;
+		padding: 20px 30px;
+}
+
+.Texto3 {
+		box-sizing: border-box;	
+		width: 100%;
+		height: auto;
+		font-size: 30px;
+		text-align: justify;
+		color: #FFFFFF;
+		margin: 0;
+		padding: 20px 30px;
+}
+
+.Texto4 {
+		box-sizing: border-box;	
+		width: 100%;
+		height: auto;
+		font-size: 30px;
+		text-align: justify;
+		color: #3A4A55;
+		margin: 0;
+		padding: 5px 0;
+}
+#Rodape {
+		box-sizing: border-box;
+		width: 100%;
+		height: auto; 
+		float: left;	
+		margin: 0;
+		padding: 30px 10%;
+		background-color: #32CD32;
+}
+
+#RodL {
+		width: 50%;
+		float: left;
+		text-align: left;
+}
+
+#RodR {
+		width: 50%;
+		float: left;
+		color: #A9A9A9;
+		text-align: right;
+}
+
+.TextoRod {
+		width: 100%;
+		float: left;
+		color: #ffffff;
+		font-size: 10pt;
+		margin: 0;
+		padding: 3px 0;
+}
+
+.SobreRod:hover {
+		color: #C0C0C0;
+}
+
+.hr_Rod {
+		width: 100%;
+		border-color: white;
+}

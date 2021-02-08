@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta charset="UTF-8" />
+			<title>Login</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+			<link rel="shortcut icon" href="Logo.png" /> 
+			<link rel="stylesheet" type="text/css" href="CSS_Login.css"/>
+			<link rel = "stylesheet" type = "text/css" href = "pagina.css">
+			<link rel = "stylesheet" type = "text/css" href = "Form.css">
+			<link rel = "stylesheet" type = "text/css" href = "cons.css">
+	</head>
+	
+	<script>
+			function blokletras(objEvent)
+			{
+				var iKeyCode;
+				iKeyCode = objEvent.keyCode; 
+				if(iKeyCode>=48 && iKeyCode<=57) return true;
+				return false;
+			}
+			
+			function valida()
+				{
+					vazio=false;
+					
+					if(document.f1.txtNome.value=="")
+					{
+						alert("Campo senha obrigatório ");
+						vazio="true";
+					}
+					if(document.f1.txtNome2.value=="")
+					{
+						alert("Campo login obrigatório");
+						vazio="true";
+					}
+					
+					if(vazio==false) document.f1.submit();   
+				}        
+		</script>
+<div id="image">
+	<body background="biblioteca2.jpeg">
+
+
+		<div id="cadastro">
+			<form name="f1" action="acesso.php" method="POST">
+				<h1>Acesse nosso site </h1> 
+
+			Digite sua senha :<input type="password" name="txtNome" id="nome_cad" size="50" maxlength="40" required="required" onkeypress="return blokletras(event)"><br>
+			Digite seu login :<input type="text" name="txtNome2" id="nome_cad" size="50" maxlength="40" required="required" placeholder="ex : login" ><br><br>
+
+			<a href="acesso.php"><input type="submit" name="pesquisar" value="Acessar" onclick="valida()">
+					
+					
+		</form>
+		
+
+		</div>
+
+
+	</body>
+</div>
+</html>

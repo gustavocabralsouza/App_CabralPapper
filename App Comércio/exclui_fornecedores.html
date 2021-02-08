@@ -1,0 +1,58 @@
+<head>
+	
+	<title>
+		Exclusão
+	</title>
+	
+	<meta charset = "UTF-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="CSS_Login.css"/>
+	<link rel = "stylesheet" type = "text/css" href = "pagina.css">
+	<link rel = "stylesheet" type = "text/css" href = "Form.css">
+	<link rel = "stylesheet" type = "text/css" href = "cons.css">
+	<link rel = "stylesheet" type = "text/css" href = "Index.css">
+	<link rel = "stylesheet" type = "text/css" href = "tabela.css">
+	
+	<script language="Javascript">
+
+		function blokletras(objEvent)
+        {
+            var iKeyCode;
+            iKeyCode = objEvent.keyCode; 
+            if(iKeyCode>=48 && iKeyCode<=57) return true;
+            return false;
+        }
+	
+		function valida(){
+			vazio=false;
+			if(document.f1.pesquisa.value==""){
+				alert("O Código do Fornecedor tem que ser preenchido");
+				vazio=true
+			}
+			if(vazio==false) document.f1.submit();
+		}
+	</script>
+		
+</head>
+<body background="biblioteca2.jpeg">
+
+	<div id="cadastro">
+	
+		<form name="f1" action="exclui_fornecedores.php" method = "POST">
+			<h1>Excluir Fornecedores </h1> 
+
+			Código do Fornecedor:<input type="text" name="pesquisa" id="nome_cad"  placeholder="ex : 1" required="required" onkeypress="return blokletras(event)"><br>
+			<br><br><input type="submit" name="pesquisar" value="Excluir" onclick="valida()">
+
+		</form>		
+	</div>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+	<center><a href="Index_Menu.html"><input type="submit" name="pesquisar" value="Voltar ao Menu Inicial"></a></button></center>
+
+	<br><br>
+	
+	
+</body>
+</html>	

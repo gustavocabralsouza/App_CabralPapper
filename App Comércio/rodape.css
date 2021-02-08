@@ -1,0 +1,41 @@
+/*Rodapé*/
+#Rodape {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto; 
+    float: left;  
+    margin: 0;
+    padding: 30px 10%;
+    background-color: #32CD32;
+}
+
+#RodL {
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+
+#RodR {
+    width: 50%;
+    float: left;
+    color: #A9A9A9;
+    text-align: right;
+}
+
+.TextoRod {
+    width: 100%;
+    float: left;
+    color: #ffffff;
+    font-size: 10pt;
+    margin: 0;
+    padding: 3px 0;
+}
+
+.SobreRod:hover {
+    color: #C0C0C0;
+}
+
+.hr_Rod {
+    width: 100%;
+    border-color: white;
+}

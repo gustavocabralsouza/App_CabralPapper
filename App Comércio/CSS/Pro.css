@@ -1,0 +1,143 @@
+/*******************************************************
+	CSS - Profissão - V1
+*******************************************************/
+
+
+.active {
+		/* color: #3D8B9F; */
+		/* border-left: 5px solid #3D8B9F; */
+		background-color: red;
+}
+#Rodape {
+		box-sizing: border-box;
+		width: 100%;
+		height: auto; 
+		float: left;	
+		margin: 0;
+		padding: 30px 10%;
+		background-color: #32CD32;
+}
+
+#RodL {
+		width: 50%;
+		float: left;
+		text-align: left;
+}
+
+#RodR {
+		width: 50%;
+		float: left;
+		color: #A9A9A9;
+		text-align: right;
+}
+
+.TextoRod {
+		width: 100%;
+		float: left;
+		color: #ffffff;
+		font-size: 10pt;
+		margin: 0;
+		padding: 3px 0;
+}
+
+.SobreRod:hover {
+		color: #C0C0C0;
+}
+
+.hr_Rod {
+		width: 100%;
+		border-color: white;
+}
+
+/*******************************************************
+	Grupos - G1 G2 G3 G4 G5
+*******************************************************/
+
+#G1, #G2, #G3, #G4, #G5 {
+		position: relative;
+		box-sizing: border-box;
+		height: 100vh;
+		width: 100%;
+		float: left;
+		margin: 0;
+		padding: 0;
+}
+
+#G2, #G3, #G4, #G5 {
+		background-image: url("../img/FundoW.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+}
+
+#G2-Cont, #G3-Cont, #G4-Cont, #G5-Cont {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 110px 10%;
+		padding: 0;
+		background-color: rgba(0, 0, 0, 70%);
+		border-radius: 20px;
+}		
+	
+/*******************************************************
+	Grupo 1
+*******************************************************/
+
+#Slideshow-Cont {
+		position: relative;
+		box-sizing: border-box;
+		width: 100%;
+		height: auto;
+		float: left;
+		margin: 0;
+		padding: 0;
+}
+
+	.Slide {
+			box-sizing: border-box;
+			width: 100%;
+			height: 100vh;
+			float: left;
+			display: none;
+	}
+	
+	.Slide img {
+			width: 100%;
+			height: 100%;
+	}
+
+	#Dot-Group {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			box-sizing: border-box;
+			width: 100%;
+			height: auto;
+			text-align: center;
+			margin: 0;
+			padding: 10px 0;
+			background-color: rgba(0, 0, 0, 50%);
+			visibility: hidden;
+	}
+	
+		.dot {
+				box-sizing: border-box;
+				width: 20px;
+				height: 20px;
+				display: inline-block;
+				margin: 0 5px;
+				background-color: #696969;
+				border-radius: 50%;
+				transition: 0.5s;
+		}
+	
+		.active {					
+				background-color: #A9A9A9;
+		}	

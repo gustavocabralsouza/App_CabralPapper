@@ -1,0 +1,206 @@
+<html>
+<head>
+	
+	<title>
+		Cadastro
+	</title>
+	
+	<meta charset = "UTF-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="CSS_Login.css"/>
+	<link rel = "stylesheet" type = "text/css" href = "pagina.css">
+	<link rel = "stylesheet" type = "text/css" href = "Form.css">
+	<link rel = "stylesheet" type = "text/css" href = "cons.css">
+	<link rel = "stylesheet" type = "text/css" href = "rodape.css">
+
+
+	<script language="Javascript">
+		
+		function Mascara(formato, keypress, objeto) {
+		
+			campo = eval(objeto);
+			
+			// CEP
+			
+			if (formato == 'cep') {
+				
+				sep = '-';
+				conj1 = 5;
+				
+				if (campo.value.length == conj1) {
+					campo.value = campo.value + sep;
+				}			
+			}
+			
+			
+			// CPF
+			// 03.847.655/0001-98 43.434.343/4343-43
+			if (formato == 'CNPJ') {
+				
+				sep1 = '.';
+				sep3 = '/';			 
+			    sep4 = '-';
+				conj1 = 2;
+				conj2 = 6;
+				conj3 = 10;
+				conj4 = 15;
+				
+				if (campo.value.length == conj1) {
+					campo.value = campo.value + sep1;
+				}
+				
+				if (campo.value.length == conj2) {
+					campo.value = campo.value + sep1;
+				}
+				
+				if (campo.value.length == conj3) {
+					campo.value = campo.value + sep3;
+				}
+				if (campo.value.length == conj4) {
+					campo.value = campo.value + sep4;
+				}	
+								
+			}
+			
+			
+			// CNPJ
+			
+			if (formato == 'gu') {
+				
+				sep = '/';
+				conj1 = 2;
+				conj2 = 5;
+				
+				if (campo.value.length == conj1) {
+					campo.value = campo.value + sep;
+				}
+				
+				if (campo.value.length == conj2) {
+					campo.value = campo.value + sep;
+				}		
+			}
+			
+			
+			// TELEFONE
+			
+			if (formato == 'fone') {
+				
+				sep1 = '(';
+				sep2 = ')';
+				sep3 = '-';
+				conj1 = 0;
+				conj2 = 3;
+				conj3 = 8;
+				
+				if (campo.value.length == conj1) {
+					campo.value = campo.value + sep1;
+				}
+				
+				if (campo.value.length == conj2) {
+					campo.value = campo.value + sep2;
+				}
+
+				if (campo.value.length == conj3) {
+					campo.value = campo.value + sep3;
+				}
+			}
+			
+		
+		}
+		function blokletras(objEvent)
+        {
+            var iKeyCode;
+            iKeyCode = objEvent.keyCode; 
+            if(iKeyCode>=48 && iKeyCode<=57) return true;
+            return false;
+        }
+	
+		function valida(){
+			vazio=false;
+			if(document.f1.codfornecedor.value==""){
+				alert("O Código do Fornecedor tem que ser preenchido");
+				vazio=true
+			}
+			if(document.f1.razaosocial.value==""){
+				alert("A Razão Social tem que ser preenchida");
+				vazio=true
+			}
+			if(document.f1.nomefantasia.value==""){
+				alert("O Nome Fantasia tem que ser preenchido");
+				vazio=true
+			}
+			if(document.f1.CNPJ.value==""){
+				alert("O CNPJ tem que ser preenchido");
+				vazio=true
+			}
+			if(document.f1.endereco.value==""){
+				alert("O Endereço tem que ser preenchido");
+				vazio=true
+			}
+			if(document.f1.num.value==""){
+				alert("O Número do Fornecedor tem que ser preenchido");
+				vazio=true
+			}
+			if(document.f1.bairro.value==""){
+				alert("O Bairro tem que ser preenchido");
+				vazio=true
+			}
+			if(document.f1.cidade.value==""){
+				alert("A Cidade tem que ser preenchida");
+				vazio=true
+			}
+			if(document.f1.fone.value==""){
+				alert("O Telefone tem que ser preenchido");
+				vazio=true
+			}
+			if(document.f1.nomecontato.value==""){
+				alert("O Nome Contato tem que ser preenchido");
+				vazio=true
+			}
+			if(document.f1.email.value==""){
+				alert("O Email tem que ser preenchido");
+				vazio=true
+			}
+			if(document.f1.site.value==""){
+				alert("O Site tem que ser preenchido");
+				vazio=true
+			}
+			if(vazio==false) document.f1.submit();
+		}
+	</script>
+	
+</head>
+<body background="biblioteca2.jpeg">
+
+		<div id="cadastro">
+
+			<form name="f1" action="cadastro_fornecedores.php" method = "POST">
+				
+					<h1>Cadastrar Fornecedores </h1> 
+
+			Código do Fornecedor :<input type="text" name="codfornecedor2" id="nome_cad" size="50" maxlength="40" placeholder="ex : 1" required="required" onkeypress="return blokletras(event)"><br>
+			Razão Social :<input type="text" name="razaosocial" id="nome_cad" required="required"  ><br>
+			Nome Fantasia :<input type="text" name="nomefantasia" id="nome_cad"  required="required" ><br>
+			CNPJ :<input type="text" name="CNPJ" id="nome_cad" required="required" placeholder="ex : 03.847.655/0001-98" maxlength = "18" size = "12" onkeypress = "Mascara('CNPJ','window.event.keyCode','document.f1.CNPJ')"><br>
+			Endereço :<input type="text" name="endereco" id="nome_cad" required="required"><br>
+			Número :<input type="text" name="num" id="nome_cad"  required="required" onkeypress="return blokletras(event)" ><br>
+			Bairro :<input type="text" name="bairro" id="nome_cad"  required="required"><br>
+			Cidade :<input type="text" name="cidade" id="nome_cad"  required="required"><br>
+			Telefone :<input type = "text" name = "fone"  maxlength = "13" size = "12" title = "(99)9999-9999" onkeypress = "Mascara('fone','window.event.keyCode','document.f1.fone')"/ ><br>
+			Nome Contato :<input type="text" name="nomecontato" id="nome_cad"  required="required"><br>
+			Email :<input type="email" name="email" id="nome_cad"  required="required"><br>
+			Site :<br><input type="text" name="site" id="nome_cad" required="required"><br>
+			
+			<br><input type="submit" name="pesquisar" value="Cadastrar" onclick="valida()">
+
+		</form>
+	</div>
+	<center>
+
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+	<a href="Index_Menu.html"><input type="submit" name="pesquisar" value="Voltar ao Menu Inicial"></a></button>
+	
+</body>
+</html>	
