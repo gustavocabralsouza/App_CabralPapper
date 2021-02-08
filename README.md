@@ -1,6 +1,5 @@
 <h1 align="center">
 <br>
-  <img src="papelaria.png" alt="CABRAL PAPPER" width="120">
 <br>
 <br>
 CABRAL PAPPER
